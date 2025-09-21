@@ -72,7 +72,7 @@ const CartPanel: React.FC<CartProps> = ({ open, onClose }) => {
 
   const fetchSuggestions = async (query: string) => {
     if (query.length < 3) return;
-    let token = "11c5c824447df1c42c40db2e1666b1800e107abf";
+    let token = "my_token";
     const response = await fetch(
       "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address",
       {
